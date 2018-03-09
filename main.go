@@ -11,13 +11,13 @@ func main() {
 	/*
 		$ go run main.go
 		Addition ops: 18237288 37474576
-		Addition 1000000 cycles (miliseconds): 0.522743
+		Addition 1000000 cycles (milliseconds): 0.522743
 		Subtraction ops: 28181471 -55362942
-		Subtraction 1000000 cycles (miliseconds): 0.534796
+		Subtraction 1000000 cycles (milliseconds): 0.534796
 		Multiplication ops: 28580481 +Inf
-		Multiplication 1000000 cycles (miliseconds): 0.470221
+		Multiplication 1000000 cycles (milliseconds): 0.470221
 		Division ops: 28209822 0
-		Division 1000000 cycles (miliseconds): 0.468782
+		Division 1000000 cycles (milliseconds): 0.468782
 	*/
 	cycles := additionSecond()
 	additionCycles(cycles)
@@ -53,7 +53,7 @@ func additionCycles(maxCycles int64) {
 		cycles++
 	}
 	diffTime := float64(time.Now().UnixNano()-startTime) / math.Pow10(6)
-	fmt.Printf("Addition %d cycles (miliseconds): %f\n", maxCycles, diffTime)
+	fmt.Printf("Addition %d cycles (milliseconds): %f\n", maxCycles, diffTime)
 }
 
 func subtractionSecond() (count int64) {
@@ -80,7 +80,7 @@ func subtractionCycles(maxCycles int64) {
 		cycles++
 	}
 	diffTime := float64(time.Now().UnixNano()-startTime) / math.Pow10(6)
-	fmt.Printf("Subtraction %d cycles (miliseconds): %f\n", maxCycles, diffTime)
+	fmt.Printf("Subtraction %d cycles (milliseconds): %f\n", maxCycles, diffTime)
 }
 
 func multiplicationSecond() (count int64) {
@@ -107,7 +107,7 @@ func multiplicationCycles(maxCycles int64) {
 		cycles++
 	}
 	diffTime := float64(time.Now().UnixNano()-startTime) / math.Pow10(6)
-	fmt.Printf("Multiplication %d cycles (miliseconds): %f\n", maxCycles, diffTime)
+	fmt.Printf("Multiplication %d cycles (milliseconds): %f\n", maxCycles, diffTime)
 }
 
 func divisionSecond() (count int64) {
@@ -134,5 +134,5 @@ func divisionCycles(maxCycles int64) {
 		cycles++
 	}
 	diffTime := float64(time.Now().UnixNano()-startTime) / math.Pow10(6)
-	fmt.Printf("Division %d cycles (miliseconds): %f\n", maxCycles, diffTime)
+	fmt.Printf("Division %d cycles (milliseconds): %f\n", maxCycles, diffTime)
 }

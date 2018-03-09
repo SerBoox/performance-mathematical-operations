@@ -9,13 +9,13 @@
             go version go1.10 linux/amd64
         $ go run main.go
             Addition ops: 18237288 37474576
-            Addition 1000000 cycles (miliseconds): 0.522743
+            Addition 1000000 cycles (milliseconds): 0.522743
             Subtraction ops: 28181471 -55362942
-            Subtraction 1000000 cycles (miliseconds): 0.534796
+            Subtraction 1000000 cycles (milliseconds): 0.534796
             Multiplication ops: 28580481 +Inf
-            Multiplication 1000000 cycles (miliseconds): 0.470221
+            Multiplication 1000000 cycles (milliseconds): 0.470221
             Division ops: 28209822 0
-            Division 1000000 cycles (miliseconds): 0.468782
+            Division 1000000 cycles (milliseconds): 0.468782
     ```
 > Например: Addition ops: [число циклов за одну секунду] [полученое значение]
 2. На PHP:
@@ -27,13 +27,13 @@
             Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies
         $ php main.php
             Addition ops:28622779 58245558
-            Addition 1000000 cycles (miliseconds): 29.556035995483
+            Addition 1000000 cycles (milliseconds): 29.556035995483
             Subtraction ops:56074025 -111148050
-            Subtraction 1000000 cycles (miliseconds): 31.360149383545
+            Subtraction 1000000 cycles (milliseconds): 31.360149383545
             Multiplication ops:56888320 INF
-            Multiplication 1000000 cycles (miliseconds): 27.434110641479
+            Multiplication 1000000 cycles (milliseconds): 27.434110641479
             Division ops:55865081 0
-            Division 1000000 cycles (miliseconds): 29.772043228149
+            Division 1000000 cycles (milliseconds): 29.772043228149
     ```
 > PHP побеждает на операциях когда мы постоянно проверяем время 
 ``` php
@@ -51,11 +51,11 @@
         Python 2.7.14
     $ python3 main.py
         ('Addition ops:', 5672282, 12344564.0)
-        Addition 1000000.0 cycles (miliseconds): 108
+        Addition 1000000.0 cycles (milliseconds): 108
         ('Subtraction ops:', 5443606, -9887212.0)
-        Subtraction 1000000.0 cycles (miliseconds): 114
+        Subtraction 1000000.0 cycles (milliseconds): 114
         ('Mubtraction ops:', 5577323, inf)
-        Multiplication 1000000.0 cycles (miliseconds): 110
+        Multiplication 1000000.0 cycles (milliseconds): 110
         ('Division ops:', 5418457, 0.0)
 ```
 > Сильно проигрывает по сравнению с остальными
@@ -67,13 +67,13 @@
         Python 3.6.4
     $ python3 main.py
         Addition ops: 4167608 9335216.0
-        Addition 1000000.0 cycles (miliseconds): 159
+        Addition 1000000.0 cycles (milliseconds): 159
         Subtraction ops: 4088216 -7176432.0
-        Subtraction 1000000.0 cycles (miliseconds): 167
+        Subtraction 1000000.0 cycles (milliseconds): 167
         Mubtraction ops: 4150634 inf
-        Multiplication 1000000.0 cycles (miliseconds): 171
+        Multiplication 1000000.0 cycles (milliseconds): 171
         Division ops: 3062825 0.0
-        Division 1000000.0 cycles (miliseconds): 168
+        Division 1000000.0 cycles (milliseconds): 168
 ```
 > Python3 проигрывет даже второму питону
 

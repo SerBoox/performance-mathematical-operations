@@ -76,7 +76,7 @@ function additionCycles(int $maxCycles)
         $cycles++;
     }
     $diffTime = (microtime(true) - $startTime) * pow(10, 3);
-    print_r("Addition {$maxCycles} cycles (miliseconds): {$diffTime}\n");
+    print_r("Addition {$maxCycles} cycles (milliseconds): {$diffTime}\n");
 }
 
 /**
@@ -118,7 +118,7 @@ function subtractionCycles($maxCycles)
         $cycles++;
     }
     $diffTime = (microtime(true) - $startTime) * pow(10, 3);
-    print_r("Subtraction {$maxCycles} cycles (miliseconds): {$diffTime}\n");
+    print_r("Subtraction {$maxCycles} cycles (milliseconds): {$diffTime}\n");
 }
 
 /**
@@ -161,7 +161,7 @@ function multiplicationCycles($maxCycles)
         $cycles++;
     }
     $diffTime = (microtime(true) - $startTime) * pow(10, 3);
-    print_r("Multiplication {$maxCycles} cycles (miliseconds): {$diffTime}\n");
+    print_r("Multiplication {$maxCycles} cycles (milliseconds): {$diffTime}\n");
 }
 
 /**
@@ -204,5 +204,5 @@ function divisionCycles(int $maxCycles)
         $cycles++;
     }
     $diffTime = (microtime(true) - $startTime) * pow(10, 3);
-    print_r("Division {$maxCycles} cycles (miliseconds): {$diffTime}\n");
+    print_r("Division {$maxCycles} cycles (milliseconds): {$diffTime}\n");
 }

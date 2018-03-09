@@ -10,21 +10,21 @@ def main():
     """
         $ python3 main.py
             Addition ops: 4167608 9335216.0
-            Addition 1000000.0 cycles (miliseconds): 159
+            Addition 1000000.0 cycles (milliseconds): 159
             Subtraction ops: 4088216 -7176432.0
-            Subtraction 1000000.0 cycles (miliseconds): 167
+            Subtraction 1000000.0 cycles (milliseconds): 167
             Mubtraction ops: 4150634 inf
-            Multiplication 1000000.0 cycles (miliseconds): 171
+            Multiplication 1000000.0 cycles (milliseconds): 171
             Division ops: 3062825 0.0
-            Division 1000000.0 cycles (miliseconds): 168
+            Division 1000000.0 cycles (milliseconds): 168
 
         python main.py
             ('Addition ops:', 5672282, 12344564.0)
-            Addition 1000000.0 cycles (miliseconds): 108
+            Addition 1000000.0 cycles (milliseconds): 108
             ('Subtraction ops:', 5443606, -9887212.0)
-            Subtraction 1000000.0 cycles (miliseconds): 114
+            Subtraction 1000000.0 cycles (milliseconds): 114
             ('Mubtraction ops:', 5577323, inf)
-            Multiplication 1000000.0 cycles (miliseconds): 110
+            Multiplication 1000000.0 cycles (milliseconds): 110
             ('Division ops:', 5418457, 0.0)    
         
     """
@@ -62,7 +62,7 @@ def additionCycles(max_cycles):
         value += 2
         cycles += 1
     diff_time = current_milli_time() - start_time       
-    print('Addition {0} cycles (miliseconds): {1}'.format(max_cycles, diff_time))    
+    print('Addition {0} cycles (milliseconds): {1}'.format(max_cycles, diff_time))    
 
 def subtractionSecond():
     start_time = time.time()
@@ -85,7 +85,7 @@ def subtractionCycles(max_cycles):
         value -= 2
         cycles += 1
     diff_time = current_milli_time() - start_time       
-    print('Subtraction {0} cycles (miliseconds): {1}'.format(max_cycles, diff_time))       
+    print('Subtraction {0} cycles (milliseconds): {1}'.format(max_cycles, diff_time))       
 
 def multiplicationSecond():
     start_time = time.time()
@@ -108,7 +108,7 @@ def multiplicationCycles(max_cycles):
         value *= 2
         cycles += 1
     diff_time = current_milli_time() - start_time       
-    print('Multiplication {0} cycles (miliseconds): {1}'.format(max_cycles, diff_time))     
+    print('Multiplication {0} cycles (milliseconds): {1}'.format(max_cycles, diff_time))     
 
 def divisionSecond():
     start_time = time.time()
@@ -131,7 +131,7 @@ def divisionCycles(max_cycles):
         value /= 2
         cycles += 1
     diff_time = current_milli_time() - start_time       
-    print('Division {0} cycles (miliseconds): {1}'.format(max_cycles, diff_time))    
+    print('Division {0} cycles (milliseconds): {1}'.format(max_cycles, diff_time))    
 
 if __name__ == '__main__':
     main()
