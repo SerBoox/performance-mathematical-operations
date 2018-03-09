@@ -45,7 +45,7 @@ func additionCycles(maxCycles int64) {
 	startTime := time.Now().UnixNano()
 	cycles := int64(0)
 	if maxCycles >= int64(math.Pow10(6)) {
-		maxCycles = int64(math.Pow10(10))
+		maxCycles = int64(6 * math.Pow10(6))
 	}
 	value := int64(math.Pow10(6))
 	for cycles <= maxCycles {
@@ -115,7 +115,7 @@ func divisionSecond() (count int64) {
 	finishTime := startTime.Add(1 * time.Second)
 	value := math.Pow10(6)
 	for time.Now().Unix() <= finishTime.Unix() {
-		value = value / 2
+		value /= 2
 		count++
 	}
 	fmt.Println("Division ops:", count, value)

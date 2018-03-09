@@ -2,7 +2,26 @@
 
 ### Скросить выполения сложения, вычитания, умножения и деления
 
-1. На Go:
+1. На C:
+
+    ``` bash
+        $ gcc --version
+            gcc (GCC) 7.3.1 20180130 (Red Hat 7.3.1-2)
+            Copyright (C) 2017 Free Software Foundation, Inc.
+            This is free software; see the source for copying conditions.  There is NO
+            warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        $ gcc main.c -o main && ./main
+            Addition ops: 452576811 906153622
+            Addition 1000000 cycles (milliseconds): 2.453000
+            Subtraction ops: 521797940 -1042595880
+            Subtraction 1000000 cycles (milliseconds): 2.613000
+            Multiplication ops: 477303302 inf
+            Multiplication 1000000 cycles (milliseconds): 3.719000
+            Division ops: 314385786 0.000000
+            Division 1000000 cycles (milliseconds): 7.333000
+    ```
+> Например: Addition ops: [число циклов за одну секунду] [полученое значение]
+2. На Go:
 
     ``` bash
         $ go version
@@ -17,8 +36,8 @@
             Division ops: 28209822 0
             Division 1000000 cycles (milliseconds): 0.468782
     ```
-> Например: Addition ops: [число циклов за одну секунду] [полученое значение]
-2. На PHP:
+
+3. На PHP:
 
     ``` bash
         $ php --version
@@ -44,7 +63,7 @@
     while ($cycles <= $maxCycles) { $cycles++; }
 ```
 
-3. На Python:
+4. На Python:
 
 ``` bash
     $ python --version
@@ -60,7 +79,7 @@
 ```
 > Сильно проигрывает по сравнению с остальными
 
-4. На Python3:
+5. На Python3:
 
 ``` bash
     $ python3 --version
