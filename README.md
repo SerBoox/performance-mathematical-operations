@@ -78,7 +78,7 @@
     while ($cycles <= $maxCycles) { $cycles++; }
 ```
 
-4. На Python:
+5. На Python:
 
 ``` bash
     $ python --version
@@ -95,7 +95,7 @@
 ```
 > Сильно проигрывает по сравнению с остальными
 
-5. На Python3:
+6. На Python3:
 
 ``` bash
     $ python3 --version
