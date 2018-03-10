@@ -1,6 +1,6 @@
-# Тестирование скрости выполнения арифметических операций
+# Тестирование скрости выполнения арифметических операций у различных языков программирования
 
-### Скросить выполения сложения, вычитания, умножения и деления
+### Скросить выполения сложения, вычитания, умножения и деления при асимптотической сложности O(N)
 
 1. На C:
 
@@ -36,8 +36,23 @@
             Division ops: 28209822 0
             Division 1000000 cycles (milliseconds): 0.468782
     ```
+3. На NodeJS:
 
-3. На PHP:
+    ``` bash
+        $ node --version
+            v8.10.0
+        $ node main.js
+            Addition ops: 7094927 15189854
+            Addition 1000000 cycles (milliseconds): 4
+            Subtraction ops: 7041159 -13082318
+            Subtraction 1000000 cycles (milliseconds): 3
+            Multiplication ops: 4857229 Infinity
+            Multiplication 1000000 cycles (milliseconds): 3
+            Division ops: 4845301 0
+            Division 1000000 cycles (milliseconds): 4
+    ```
+
+4. На PHP:
 
     ``` bash
         $ php --version
@@ -54,7 +69,7 @@
             Division ops:55865081 0
             Division 1000000 cycles (milliseconds): 29.772043228149
     ```
-> PHP побеждает на операциях когда мы постоянно проверяем время 
+> PHP побеждает NodeJS на операциях когда мы постоянно проверяем время 
 ``` php
     while (time() <= $finishTimeStamp) {}
 ``` 
@@ -76,6 +91,7 @@
         ('Mubtraction ops:', 5577323, inf)
         Multiplication 1000000.0 cycles (milliseconds): 110
         ('Division ops:', 5418457, 0.0)
+        Division 1000000.0 cycles (milliseconds): 131
 ```
 > Сильно проигрывает по сравнению с остальными
 
