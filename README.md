@@ -36,7 +36,27 @@
             Division ops: 28209822 0
             Division 1000000 cycles (milliseconds): 0.468782
     ```
-3. На NodeJS:
+3. На Java:
+
+    ``` bash
+        $ java --version
+            openjdk 9.0.4
+            OpenJDK Runtime Environment (build 9.0.4+11)
+            OpenJDK 64-Bit Server VM (build 9.0.4+11, mixed mode)
+        $ javac --version
+            javac 9.0.4
+        $ javac Main.java && java Main && rm Tests.class && rm Main.class
+            Addition ops: 33120389 67240778
+            Addition 1000000 cycles (milliseconds): 6.000000
+            Subtraction ops: 32174818 -63349636
+            Subtraction 1000000 cycles (milliseconds): 7.000000
+            Multiplication ops: 33146409 0
+            Multiplication 1000000 cycles (milliseconds): 7.000000
+            Division ops: 32591513 0
+            Division 1000000 cycles (milliseconds): 10.000000
+    ```
+
+4. На NodeJS:
 
     ``` bash
         $ node --version
@@ -52,7 +72,7 @@
             Division 1000000 cycles (milliseconds): 4
     ```
 
-4. На PHP:
+5. На PHP:
 
     ``` bash
         $ php --version
@@ -78,7 +98,7 @@
     while ($cycles <= $maxCycles) { $cycles++; }
 ```
 
-5. На Python:
+6. На Python:
 
 ``` bash
     $ python --version
@@ -95,7 +115,7 @@
 ```
 > Сильно проигрывает по сравнению с остальными
 
-6. На Python3:
+7. На Python3:
 
 ``` bash
     $ python3 --version
@@ -110,7 +130,7 @@
         Division ops: 3062825 0.0
         Division 1000000.0 cycles (milliseconds): 168
 ```
-> Python3 проигрывет даже второму питону
+> Python3 почему-то проигрывет второму питону
 
 #### Заметка
 > Не ручаюсь за верность проводимого тестирования, т.к. оно тривиально и наверняка я что-то делаю не так, тем не менее интересно замечать столь отличающиеся результаты.
