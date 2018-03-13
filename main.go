@@ -45,7 +45,7 @@ func additionCycles(maxCycles int64) {
 	startTime := time.Now().UnixNano()
 	cycles := int64(0)
 	if maxCycles >= int64(math.Pow10(6)) {
-		maxCycles = int64(6 * math.Pow10(6))
+		maxCycles = int64(math.Pow10(6))
 	}
 	value := int64(math.Pow10(6))
 	for cycles <= maxCycles {
